@@ -1,0 +1,232 @@
+<!-- <div class="container-fluid"> -->
+<h2 class="heading">WiCheck</h2>
+<!-- <mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened> -->
+<!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-drawer mode="side" opened>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+      </button>
+      <button mat-menu-item >
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voice mail</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+      </button>
+    </mat-menu>
+  </mat-drawer>
+  <mat-drawer-content>Main content</mat-drawer-content>
+</mat-drawer-container> -->
+<!-- </div> -->
+<div class="row">
+  <div class="col-2">
+    <!-- <button
+     class="btn btn-danger"
+     mat-icon-button
+      [matMenuTriggerFor]="menu"
+      aria-label="Example icon-button with a menu"
+    >
+      <mat-icon>more_vert</mat-icon>
+    </button> -->
+    <!-- <mat-menu #menu="matMenu"> -->
+      <!-- <div  class="">
+      <button mat-menu-item type="button">
+        <mat-icon>dialpad</mat-icon>
+        <span><i class="bi bi-speedometer2"></i></span>
+        <span>Dashboard</span>
+      </button></div> -->
+      <!-- <div>
+      <button mat-menu-item>
+        <mat-icon>voicemail</mat-icon>
+        <span>Config ATF</span>
+      </button></div>
+
+      <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Config Group</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Config Trafic</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Config EndPoint</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Built-in Script</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Utilities</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>System</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Help</span>
+      </button> -->
+    
+    <!-- </mat-menu> -->
+    <div class="containerd">
+                  
+      <ul class="sidebar">
+      <li><span></span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span><button type="button" style="border:none ;">Dashboard</button></span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span>ConfigATF</span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span>ConfigGroup</span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span>Configtrafic</span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span>ConfigEndpoint</span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span>BuiltinScript</span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span>Utilities</span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span>System</span></li>
+       <li><span><i class="bi bi-alarm"></i></span><span>Help</span></li>
+       
+      </ul>
+      
+      <div class="content">
+         
+      </div>
+</div>
+  </div>
+  <div class="col-10" id="main">
+    <div class="head">
+      <h1>Config Radio Head</h1>
+    </div>
+    <div class="body">
+      <h2 class="atf">ATF-1</h2>
+    </div>
+    <div style="float: right">
+      <h2>
+        Search :<span><input /></span>
+      </h2>
+    </div>
+    <br /><br /><br />
+    <div>
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+          
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef>Device ID</th>
+            <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+          </ng-container>
+
+          
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Device Name</th>
+            <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+          </ng-container>
+
+          
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef>Device Type</th>
+            <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+          </ng-container>
+
+          
+          <ng-container matColumnDef="symbol">
+            <th mat-header-cell *matHeaderCellDef>Device Model</th>
+            <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+          </ng-container>
+
+          
+          <ng-container matColumnDef="position1">
+            <th mat-header-cell *matHeaderCellDef>Device OS Version</th>
+            <td mat-cell *matCellDef="let element">{{ element.position1 }}</td>
+          </ng-container>
+
+          
+          <ng-container matColumnDef="symbol1">
+            <th mat-header-cell *matHeaderCellDef>Manufacturer</th>
+            <td mat-cell *matCellDef="let element">{{ element.symbol1 }}</td>
+          </ng-container>
+
+          
+          <ng-container matColumnDef="weight1">
+            <th mat-header-cell *matHeaderCellDef>Connection Control</th>
+            <td mat-cell *matCellDef="let element"> 
+              <select name="cars" id="cars">
+               <option value="user">user</option>
+               <option value="user1">user1</option>
+               <option value="user2">user2</option>
+               <option value="user3">user3</option>
+              </select>
+            </td>
+          </ng-container>
+
+          
+          <ng-container matColumnDef="name1">
+            <th mat-header-cell *matHeaderCellDef>GroupId </th>
+            <td mat-cell *matCellDef="let element"><input value="1"></td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+
+        <!-- <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons 
+                   aria-label="Select page of periodic elements">
+    </mat-paginator> -->
+      </div>
+    </div>
+    <br />
+    <div>
+      <p>showing 1 to 2 of 2 entries</p>
+      <p></p>
+    </div>
+    <div>
+      <button type="button" class="btn btn-success">Saved</button>
+      <span style="float:right ; margin-right:10px;">
+        <button type="button" class="btn btn-primary" style="margin-right: 10px;">Import</button>   
+        <button type="button" class="btn btn-primary">Export</button>
+      </span>
+    </div>
+    <div>
+      <h2>IP Setting</h2>
+      <div class="ip">
+        <div class="ipd">
+        <div class="row" style="margin-top: 20px;">
+          DHCP Enable:<span style="width: 50px ;"><input class="form-check-input" type="checkbox" value=""></span>
+          
+        </div>
+        <div class="row" id="dive">
+          IP Method: <span style="width: 50px ;">
+            <select name="cars" id="cars" style="width: 120px;">
+              <option value="static">Static</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+            <br><br>
+            
+          </span>
+        </div>
+        <div class="row" id="dive">
+          IP Adress:  <span style="width:fit-content; background-color:white ; margin-left: 20px;">192.168.101.1</span>
+        </div>
+        <div class="row" id="dive" >
+          Netmask: <span style="width:fit-content; background-color:white ; margin-left: 20px;">255.255.255.0</span>
+        </div>
+       </div>
+      </div>
+    </div>
+    <div>
+      <button type="button" class="btn btn-primary">Save</button>
+    </div>
+    <div>
+      <div style="float: right;">
+        <button type="button" class="btn btn-primary">Export Logs</button>
+      </div>
+    </div>
+  </div>
+</div>
